@@ -5,6 +5,7 @@ const url =
   "mongodb+srv://admin:admin@cluster0.k9a1g.mongodb.net/customers?retryWrites=true&w=majority";
 
 const createOrder = async (req, res, next) => {
+  console.log(req.body.params.password);
   if (req.body.params.password) {
     const {
       password,
